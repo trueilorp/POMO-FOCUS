@@ -1,0 +1,51 @@
+/*Definizione font*/
+@font-face {
+    font-family: 'PixelFont';
+    src: url('Font/PixelifySans-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Bubble';
+    src: url('Font/BubblegumSans-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Chicle';
+    src: url('Font/Chicle-Regular.ttf') format('truetype');
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Bubble', sans-serif; 
+    background-image: url('images/DSC07849.jpg');
+    background-size: cover;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    mask-image: url('images/DSC07817.jpg'); /* Use an image as a mask */
+    mask-size: cover;
+}
+
+body{
+    background-color: rgb(184, 216, 245);
+    margin: 100px 0 0 100px;
+}
+
+.loading{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    border: 2px solid transparent;
+    border-top: 2px solid green;
+    animation: loading .5s infinite linear;
+}
+
+@keyframes loading{
+    from{
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg);
+    }
+}
