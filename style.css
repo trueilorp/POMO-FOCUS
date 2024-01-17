@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /*Definizione font*/
 @font-face {
     font-family: 'PixelFont';
@@ -16,7 +22,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100px;
     margin: 0;
     font-family: 'Bubble', sans-serif; 
     background-image: url('images/DSC07849.jpg');
@@ -29,10 +35,74 @@ h1 {
 }
 
 body{
-    background-color: rgb(184, 216, 245);
-    margin: 100px 0 0 100px;
+    background-color: rgb(244, 131, 116);
+    /*margin: 100px 0 0 100px;*/
 }
 
+.pomo-board{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid rgb(0, 23, 50);
+    font-size: 40px;
+    font-family: 'Chicle', sans-serif;
+    text-align: center;	
+    background-color: #fff7f8;
+    border-radius: 8px;
+    padding: 2px 2px 2px 2px;
+}
+
+.pomo-timer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.short-break{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.long-break{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.timer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid rgb(0, 23, 50);
+    font-size: 25px;
+    font-family: 'x', sans-serif;
+    text-align: center;	
+    background-color: #fff7f8;
+    border-radius: 8px;
+}
+
+.start-timer{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid rgb(0, 23, 50);
+    font-size: 25px;
+    font-family: 'x', sans-serif;
+    text-align: center;	
+    background-color: #fff7f8;
+    border-radius: 8px;
+    padding: 4px 20px 4px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.start-timer:hover{
+    background-color: rgb(157, 154, 152);
+}
+
+/*
 .loading{
     width: 100px;
     height: 100px;
@@ -49,3 +119,4 @@ body{
         transform: rotate(360deg);
     }
 }
+*/
