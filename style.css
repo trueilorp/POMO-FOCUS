@@ -22,7 +22,11 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+
     font-family: 'Bubble', sans-serif; 
+    font-size: 100px;
+
+    padding: 20px;
 }
 
 body{
@@ -32,16 +36,22 @@ body{
 
 footer {
     position: fixed;
-    left: 0;
     bottom: 0;
     width: 100%;
+
     text-align: center;
+    padding: 8px;
+
+    background-color: aliceblue;
+    font-size: large;
+    font-family: 'Chicle', sans-serif;
 }
 
 .timer{
     text-align: center;
-    padding: 10px;
-
+    padding: 10px 0px 10px 0px;
+    margin-left: 30%;
+    margin-right: 30%;
     border: 2px solid rgb(0, 23, 50);
     font-size: 100px;
     font-family: 'Bubble', sans-serif;
@@ -49,7 +59,7 @@ footer {
     border-radius: 8px;
 }
 
-.button{
+.start-button{
     border: 2px solid rgb(0, 23, 50);
     font-size: 50px;
     font-family: 'Bubble', sans-serif;
@@ -58,16 +68,15 @@ footer {
     cursor: pointer;
 }
 
+.start-button:hover{
+    background-color: aliceblue;
+}
+
 .focus{
     margin-top: 10px;
     text-align: center;
     font-size: medium;
     font-family: 'Chicle', sans-serif;
-}
-
-.copyright{
-    background-color: aliceblue;
-    padding: 0px 20px 0px 20px;
 }
 
 /*
