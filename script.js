@@ -16,7 +16,9 @@ function startFocus(){
 }
 
 function stopTimer(){
-    
+    stopTime();
+    startButton.classList.remove('hidden');
+    stopButton.classList.add('hidden');    
 }
 
 function timeOver() {
@@ -26,6 +28,8 @@ function timeOver() {
 var alertShown = false;
 let min = 0;
 let sec = 0;
+var decr;
+
 function decrementTime(){
     duration--;
     min = parseInt(duration / 60);
@@ -40,14 +44,19 @@ function decrementTime(){
     }
 }
 
+function stopTime(){
+    clearInterval(decr);
+}
+
 startButton.addEventListener('click', function(){
     startFocus()
 });
 
 startButton.addEventListener('click', function(){
-    setInterval(decrementTime, 1000)
+    decr = setInterval(decrementTime, 1000);
 });
 
 stopButton.addEventListener('click', function(){
     stopTimer()
 });
+
